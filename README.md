@@ -1,20 +1,24 @@
 # Issues
 
-**TODO: Add description**
+Elixir project to fetch _n_ issues from a Github project and display them in a table. Taken from [_Programming Elixir 1.2_](https://pragprog.com/book/elixir12/programming-elixir-1-2) by Dave Thomas.
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+```
+issues <user> <project> [ count | 4 ]
+```
 
-  1. Add issues to your list of dependencies in `mix.exs`:
+For help:
+```
+issues -h
+```
 
-        def deps do
-          [{:issues, "~> 0.0.1"}]
-        end
-
-  2. Ensure issues is started before your application:
-
-        def application do
-          [applications: [:issues]]
-        end
-
+## Example use
+```
+$ ./issues elixir-lang elixir 3
+numb | created_at           | title
+-----+----------------------+--------------------------------------------------
+3328 | 2015-05-14T15:00:37Z | Support delayed evaluation of code in .iex.exs
+3400 | 2015-06-17T13:04:45Z | Float.round is inconsistent
+3413 | 2015-06-21T07:58:03Z | Remove Float.to_string/2 and Float.to_char_list/2...
+```
