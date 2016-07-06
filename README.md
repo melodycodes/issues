@@ -1,6 +1,8 @@
 # Issues
 
-Elixir project to fetch _n_ issues from a Github project and display them in a table. Taken from [_Programming Elixir 1.2_](https://pragprog.com/book/elixir12/programming-elixir-1-2) by Dave Thomas.
+Elixir project to fetch _n_ issues from a Github project and display them in a table.
+
+Taken from [_Programming Elixir 1.2_](https://pragprog.com/book/elixir12/programming-elixir-1-2) by Dave Thomas.
 
 ## Usage
 
